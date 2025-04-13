@@ -1,6 +1,10 @@
+"use client";
+import { WavyBackground } from "@/components/wavybackhround";
+
 export default function Home() {
   return (
     <main className="h-screen flex flex-col items-center justify-center">
+      <WavyBackground className="max-w-4xl mx-auto pb-40">
       <h1 className="text-4xl font-bold mb-6">MoodifyAI 🎧</h1>
       <a
         href="/api/login"
@@ -8,6 +12,7 @@ export default function Home() {
       >
         Login with Spotify
       </a>
+      </WavyBackground>
     </main>
   );
 }
